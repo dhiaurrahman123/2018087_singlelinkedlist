@@ -40,6 +40,10 @@ void addNode() {
     nodeBaru->next = current;
     previous->next = nodeBaru;
 }
+bool searchNod(int nim, Node* current, Node* previous) {
+    previous = START;
+    current = START;
+}
 int main()
 {
     std::cout << "Hello World!\n";
