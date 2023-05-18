@@ -47,6 +47,9 @@ bool searchNod(int nim, Node* current, Node* previous) {
         previous = current;
         current = current->next;
     }
+    if (current == NULL) {
+        return false;
+    }
 }
 int main()
 {
