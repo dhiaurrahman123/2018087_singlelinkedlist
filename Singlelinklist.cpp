@@ -68,11 +68,26 @@ bool deleteNode(int nim) {
             ;
         return true;
 }
-bool listEmpy() {
+bool listEmpty() {
     if (START == NULL)
         return true;
     else
         return false;
+}
+void traverse() {
+    if (listEmpty()) {
+        cout << "List Kosong" << endl;
+        system("pause");
+        system("cls");
+        return;
+    }
+    else {
+        Node* currentNode = START;
+        while (currentNode != NULL) {
+            cout << "NIM:" << currentNode->noMhs << ", Nama:" << currentNode->name << endl;
+            currentNode = currentNode->next;
+        }
+    }
 }
 int main()
 {
